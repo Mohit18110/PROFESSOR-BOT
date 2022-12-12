@@ -86,4 +86,25 @@ LOG_STR += ("Spell Check Mode Is Enabled, bot will be suggesting related movies 
 LOG_STR += (f"MAX_LIST_ELM Found, long list will be shortened to first {MAX_LIST_ELM} elements\n" if MAX_LIST_ELM else "Full List of casts and crew will be shown in imdb template, restrict them by adding a value to MAX_LIST_ELM\n")
 LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 
+## EXTRA FEATURES ##
+    
+      # URL Shortener #
 
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'shorturllink.in')
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '')
+
+     # Auto Delete For Group Message (Self Delete) #
+SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 300))
+SELF_DELETE = environ.get('SELF_DELETE', True)
+if SELF_DELETE == "True":
+    SELF_DELETE = True
+
+    # Download Tutorial Button #
+DOWNLOAD_TEXT_NAME = "📥 HOW GET FILES FROM LINK 📥"
+DOWNLOAD_TEXT_URL = "https://t.me/HowToOpenLinks66/141"
+
+   # Custom Caption Under Button #
+CAPTION_BUTTON = "MAIN CHANNEL"
+CAPTION_BUTTON_URL = "https://t.me/+MQr7_5zLE1k1MTk1"
+
+   # Auto Delete For Bot Sending Files #
